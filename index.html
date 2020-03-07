@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js" defer></script>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <title>Biodataku</title>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js" defer></script>
+        <style>
+            /* Small (sm) */
+            @media (min-width: 640px) { /* ... */ }
+            /* Medium (md) */
+            @media (min-width: 768px) { /* ... */ }
+            /* Large (lg) */
+            @media (min-width: 1024px) { /* ... */ }
+            
+            /* Extra Large (xl) */
+            @media (min-width: 1280px) { /* ... */ }
+            </style>
+    </head>
+    <script>
+        function datanya() {
+            return {
+                foto: 'http://3.bp.blogspot.com/-FzXUZdIofH8/VUmrDeKBiJI/AAAAAAAADSw/HTIcIfcSkgU/s1600/Hatsune3.png',
+                nama: 'Achmad Rivaldi',
+                email: 'mrtampan54@gmail.com',
+                telpon: '083815355337',
+                alamat: 'Jl Rawa siluman Kp setan',
+                tempatLahir: 'Bekasi, 26 April 1999',
+                panggilan: 'Rivaldi',
+                umur: '19 tahun',
+                jenisKelamin: 'Laki Laki',
+                status: 'Bujangan',
+                golonganDarah: 'A',
+                agama:'Islam',
+                tinggiBadan: '161',
+                beratBadan: '51'
+            }
+        }
+    </script>
+    <body>
+        <div class="p-5" x-data="datanya()">
+            <div>
+                <div class="mb-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                    <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                      Foto
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="foto" type="text" placeholder="Url Foto">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                      Nama Lengkap
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="nama" type="text" placeholder="Nama">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Email
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="email" type="text" placeholder="Email">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Telpon
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="telpon" type="text" placeholder="Telpon">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Alamat
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="alamat" type="text" placeholder="Alamat">
+                      <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Tempat/Tanggal Lahir
+                      </label>
+                      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="tempatLahir" type="text" placeholder="Tempat Tanggal Lahir">
+                    </div>
+                    <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Panggilan
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="panggilan" type="text" placeholder="Nama Panggilan">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Umur
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="umur" type="text" placeholder="Umur">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Jenis Kelamin
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="jenisKelamin" type="text" placeholder="Jenis Kelamin">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Status
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="status" type="text" placeholder="Status">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Golongan Darah
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="golonganDarah" type="text" placeholder="Golongan Darah">
+                    <label class="block text-gray-700 text-sm font-bold mb-2">
+                        Agama
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="agama" type="text" placeholder="Agama">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 text-sm font-bold mb-2">
+                            Tinggi Badan
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="tinggiBadan" type="text" placeholder="Tinggi Badan">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">
+                            Berat Badan
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" x-model="beratBadan" type="text" placeholder="Berat Badan">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-white">
+            <div class="col-span-1" style="background-color: black; height: 100vh;">
+                <div class="mx-auto p-5">
+                <img x-bind:src="foto" class="mx-auto mb-4" style="border-radius: 50%;height:150; width:150; text-align: center;"/>
+                <div class="px-5"><p style="font-weight: bold;"><span x-text="nama"></span></p>
+                <p><span x-show="email">Email: </span><span x-text="email"></span></p>
+                <p><span x-show="telpon">Telpon: </span><span x-text="telpon"></span></p>
+                <p><span x-show="alamat">Alamat: </span><span x-text="alamat"></span></p>
+                <p><span x-show="tempatLahir">Tanggal Lahir: </span><span x-text="tempatLahir"></span></p>
+            </div>
+                </div>
+            </div>
+            <div class="col-span-1  md:col-span-2 " style="background-color: black;">
+            <div class="mx-auto p-5">
+                <p>Informasi Detail</p>
+                <hr></hr>
+                    <p class="mt-2"><span x-show="panggilan">Panggilan: </span><span x-text="panggilan"></span></p>
+                    <p><span x-show="umur">Umur: </span><span x-text="umur"></span></p>
+
+                    <p><span x-show="jenisKelamin">Jenis Kelamin: </span><span x-text="jenisKelamin"></span></p>
+                    <p><span x-show="status">Status: </span><span x-text="status"></span></p>
+
+                    <p><span x-show="golonganDarah">Golongan Darah: </span><span x-text="golonganDarah"></span></p>
+                    <p><span x-show="agama">Agama: </span><span x-text="agama"></span></p>
+                    <p><span x-show="tinggiBadan">Tinggi Badan: </span><span x-text="tinggiBadan"></span></p>
+                    <p><span x-show="beratBadan">Berat Badan: </span><span x-text="beratBadan"></span></p>
+
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+</html>
